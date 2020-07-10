@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete test and  cost</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fine.css">
+    <style>
+        body{
+            font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+               <div class="col-12">
+                <input type="search" name="search" id="seardid" class="form-control mb-3" placeholder="search">
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-hover  text-capitalize table-bordered">
+                        <caption>List of test and cost</caption>
+                        <thead class="table-dark">
+                            <th scope ="col">ID</th>
+                            <th scope ="col">TEST</th>
+                            <th scope ="col">COST</th>
+                        </thead>
+                        <tbody >
+                            
+                        </tbody>
+                    </table>
+                </div> 
+                <div class="row">
+                    <div class="test-edit-modal">
+                        
+                   
+                        <div class="test-edit-content">
+                            <div class="test-edit-header">
+                        
+                            </div>
+                            <hr> 
+
+                            <div class="form-wrappper">
+                                <form id="altercost" name="altercost" >
+                                          <label for="test">test</label>
+                                          <input type="text" class="form-control"  name="test" id="test">
+                                          <label for="price">cost</label>
+                                          <input type="number" name="price" id="price"  class="form-control" >
+                                          <hr>
+                                          <div class="msg "></div>
+                                          <div class="col button-wrapper">
+                                              <button type="button" id="postbtn" class="btn btn-outline-primary">update</button>
+                                          </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="fetchtest.js"></script>
+<!-- <script src="trial.js"></script> -->
+</html>
